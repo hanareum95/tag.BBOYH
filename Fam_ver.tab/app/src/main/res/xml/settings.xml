@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="setting"
+    android:title="설정">
+
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="setting_personalInformation"
+        android:title="개인 설정">
+        <Preference
+            android:key="setting_personalInformation_famAccount"
+            android:title="빼미리 계정"
+            android:summary=""
+            android:selectable="true" />
+        <Preference
+            android:key="setting_personalInformation_logout"
+            android:title="로그아웃"
+            android:summary=""
+            android:selectable="true" />
+        <Preference
+            android:key="setting_personalInformation_dropout"
+            android:title="계정 탈퇴"
+            android:summary=""
+            android:selectable="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

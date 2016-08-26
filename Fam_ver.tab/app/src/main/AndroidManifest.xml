@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a1004y.fam_vertab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Fam_ver.tab"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".BoardActivity" />
+        <activity android:name=".AccountBookActivity" />
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".JoinActivity" />
+        <activity android:name=".LoadingActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchGroupActivity" />
+        <activity android:name=".UserAccountActivity" />
+        <activity android:name=".GroupListActivity" />
+        <activity android:name=".MakeGroupActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".ShowBoardActivity" />
+        <activity android:name=".TalkActivity" />
+        <activity android:name=".WriteBoardActivity"></activity>
+    </application>
+
+</manifest>

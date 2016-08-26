@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a1004y.fam_vertab.MakeGroupActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_makeRoom_groupName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView_makeRoom_groupName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹이름"
+        android:id="@+id/textView_makeRoom_groupName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/editText_makeRoom_groupName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:id="@+id/textView_makeRoom_groupPassword"
+        android:layout_below="@+id/textView_makeRoom_groupName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView_makeRoom_groupName"
+        android:layout_alignEnd="@+id/textView_makeRoom_groupName"
+        android:layout_alignBottom="@+id/editText_makeRoom_groupPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_makeRoom_groupPassword"
+        android:layout_below="@+id/editText_makeRoom_groupName"
+        android:layout_alignLeft="@+id/editText_makeRoom_groupName"
+        android:layout_alignStart="@+id/editText_makeRoom_groupName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹코드"
+        android:id="@+id/textView_makeRoom_groupCode"
+        android:layout_below="@+id/textView_makeRoom_groupPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editText_makeRoom_groupPassword"
+        android:layout_toStartOf="@+id/editText_makeRoom_groupPassword"
+        android:layout_alignBottom="@+id/button_makeRoom_makeCode" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생성"
+        android:id="@+id/button_makeRoom_makeCode"
+        android:layout_alignRight="@+id/editText_makeRoom_groupPassword"
+        android:layout_alignEnd="@+id/editText_makeRoom_groupPassword"
+        android:layout_below="@+id/editText_makeRoom_groupPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=" 생성버튼을 눌러 그룹코드를 받으세요."
+        android:id="@+id/textView_makeRoom_madeGroupCode"
+        android:layout_below="@+id/textView_makeRoom_groupPassword"
+        android:layout_alignBottom="@+id/button_makeRoom_makeCode"
+        android:layout_toLeftOf="@+id/button_makeRoom_makeCode"
+        android:layout_alignLeft="@+id/editText_makeRoom_groupPassword"
+        android:layout_alignStart="@+id/editText_makeRoom_groupPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생성"
+        android:id="@+id/button_makeRoom_makeRoom"
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/textView_makeRoom_madeGroupCode"
+        android:layout_toLeftOf="@+id/button_makeRoom_cancel"
+        android:layout_toStartOf="@+id/button_makeRoom_cancel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:id="@+id/button_makeRoom_cancel"
+        android:layout_alignTop="@+id/button_makeRoom_makeRoom"
+        android:layout_toLeftOf="@+id/button_makeRoom_makeCode"
+        android:layout_toStartOf="@+id/button_makeRoom_makeCode" />
+
+</RelativeLayout>

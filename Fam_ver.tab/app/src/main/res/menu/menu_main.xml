@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.a1004y.fam_vertab.MainActivity">
+
+    <item
+        android:id="@+id/memu_home"
+        android:orderInCategory="100"
+        android:title="@string/menu_home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/memu_talk"
+        android:orderInCategory="100"
+        android:title="@string/memu_talk"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/memu_board"
+        android:orderInCategory="100"
+        android:title="@string/menu_board"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/memu_calendar"
+        android:orderInCategory="100"
+        android:title="@string/menu_calendar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/memu_accountbook"
+        android:orderInCategory="100"
+        android:title="@string/menu_accountbook"
+        app:showAsAction="always" />
+
+</menu>
